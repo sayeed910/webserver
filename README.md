@@ -1,4 +1,4 @@
-# webserver
+# WebServer
 Computer Networking assignment1 problem1
 
 Creating an Web Server using Socket Programming: Develop a simple web server in C/JAVA that is capable of processing requests in the following ways:
