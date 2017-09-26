@@ -17,7 +17,6 @@ public class RequestBusTest {
     }
     @Test
     public void testPushRequest(){
-
         requestBus.pushRequest(new Socket());
 
         assertEquals(1, requestBus.count());

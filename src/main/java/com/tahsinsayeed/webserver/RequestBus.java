@@ -15,7 +15,14 @@ public class RequestBus {
     }
 
     public void pushRequest(Socket socket){
+        System.out.println("socket added");
         if (socket != null) requestBuffer.add(socket);
+    }
+
+    public Socket getRequestSocket(){
+
+        System.out.println("socket taken");
+        return requestBuffer.poll();
     }
 
     public int count() {
@@ -23,5 +30,8 @@ public class RequestBus {
     }
 
     public void clear() {
+        requestBuffer.clear();
     }
+
+
 }
